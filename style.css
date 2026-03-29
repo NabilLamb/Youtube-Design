@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    padding-top: 90px;
+    padding-left: 90px;
+}
+
+.bars-icon,
+.upload-icon,
+.notification-icon,
+.search-icon {
+    width: 28px;
+    cursor: pointer;
+}
+
+.header {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.menu-button {
+    margin-right: 16px;
+    background: transparent;
+    border: none;
+}
+
+.logo {
+    width: 84px;
+    cursor: pointer;
+}
+
+.middle-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding: 0 16px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 600px;
+    height: 48px;
+    border: 1px solid #ccc;
+    border-radius: 40px;
+    margin-left: 40px;
+    margin-right: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.search-button:focus-within{
+    border: 1px solid #065fd4;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search-input {
+    flex: 1;
+    height: 100%;
+    border: none;
+    padding-left: 16px;
+    outline: none;
+}
+
+.search-input::placeholder {
+    font-size: 16px;
+}
+
+.search-button{
+    width: 64px;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+}
+
+.mic-button {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mic-icon{
+    width: 18px;
+    cursor: pointer;
+}
+
+.right-section{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.upload-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 5px 8px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.upload-icon{
+    margin-right: 5px;
+}
+
+.icon-container{
+    position: relative;
+    margin: 0 16px;
+    cursor: pointer;
+}
+
+.notification-count{
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 3px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -2px;
+    right: -4px;
+    border: 2px solid white;
+}
+
+.profile-icon{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 38px;
+    cursor: pointer;
+}
+
+.sidebar{
+    width: 80px;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+}
+
+.video-grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 16px;
+    row-gap: 40px;
+    padding: 20px;
+}
+
+.video-preview {
+    cursor: pointer;
+}
+
+.thumbnail-container {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.thumbnail {
+    width: 100%;
+    object-fit: cover;
+    aspect-ratio: 16/9;
+    border-radius: 12px;
+}
+
+.video-time {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    padding: 2px 4px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.video-info-grid {
+    display: grid;
+    grid-template-columns: 36px 1fr;
+    column-gap: 12px;
+}
+
+.profile-picture {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.video-title {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 6px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.video-author, .video-stats {
+    font-size: 14px;
+    color: #606060;
+}
+
+.video-author {
+    margin-bottom: 2px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
